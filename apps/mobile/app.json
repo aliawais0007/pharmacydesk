@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Pharmacy Desk",
+    "slug": "pharmacy-desk",
+    "scheme": "pharmacydesk",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-status-bar"
+    ]
+  }
+}

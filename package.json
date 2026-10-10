@@ -1,0 +1,18 @@
+{
+  "name": "pharmacy-management",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/mobile",
+    "packages/contracts"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace @pharmacy/web run dev -- --host 0.0.0.0",
+    "dev:mobile": "npm --workspace @pharmacy/mobile run start -- --lan",
+    "dev:api": "cd apps/api && uv run uvicorn app.main:app --reload --reload-dir app --host 0.0.0.0 --port 8000",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "typecheck:web": "npm --workspace @pharmacy/web run typecheck",
+    "typecheck:mobile": "npm --workspace @pharmacy/mobile run typecheck"
+  }
+}
